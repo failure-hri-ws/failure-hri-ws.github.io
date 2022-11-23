@@ -22,11 +22,9 @@ The content pages serve as documentation and examples to copy from.
 
 Edit the "_config.yml" to get your workshop website set up with the basics such as `title` and `author`.
 Check comments (denoted by `#` in YAML) in the file for all the options!
-
 Once you have edited the "_config.yml", you are ready to start editing your content pages.
 All your content is written in Markdown in the "content" folder.
-See [Create Lesson Content]({{ '/content/3-lesson.html' | relative_url }}) for details and options.
-
+See [Create Lesson Content]({{ '/content/3-lesson.html'|relative_url}}) for details and options.
 ## Style customization [optional]
 
 The file "assets/css/custom.scss" exposes variables that can customize the basic style of website:
@@ -41,12 +39,10 @@ To use the Bootstrap defaults for *any* of these values, comment out the variabl
 
 To add your own custom CSS, use the file "_sass/_custom.scss".
 Any CSS/SASS you add to this file will override the template and Bootstrap classes.
-
 ## Add Optional Analytics [optional]
 
 To use Google Analytics, add your analytics id to "_config.yml" in `google-analytics-id:` (if `google-analytics-id` is blank, the GA code will not added).
 To use an alternative analytics, paste the code snippet provided by the platform into the file "_includes/template/analytics.html".
-
 The analytics code will only be added when using "production" environment. 
 This happens automatically on GitHub Pages. 
 To build manually you need to add "JEKYLL_ENV", like: `JEKYLL_ENV=production jekyll build`.
